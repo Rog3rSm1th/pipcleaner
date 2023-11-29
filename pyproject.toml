@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pipcleaner"
+version = "0.1.0"
+description = "Uninstall Python modules interactively"
+authors = ["Rog3rSm1th <r0g3r5@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+inquirer = "^3.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pipcleaner = "pipcleaner.main:main"
